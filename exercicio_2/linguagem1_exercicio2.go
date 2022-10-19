@@ -34,3 +34,6 @@ func selectionsort(items []int) {
         items[i], items[minIdx] = items[minIdx], items[i] // O(1)
     }
 }
+
+// Complexidade: O(n²). É possível visualizar dois loops aninhados, fazendo com que o cálculo seja O(n) * O(n). 
+// Comparando com o segundo código, este se mostra menos eficiente, já que ao percorrer um loop, outro será percorrido para que o primeiro possa prosseguir. Ademais, sua complexidade O(n²) está acima de O(log n), que é a do segundo código.
