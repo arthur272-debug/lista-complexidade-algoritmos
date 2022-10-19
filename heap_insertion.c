@@ -4,6 +4,11 @@ struct Heap {
     int elements[20];
 };
 
+void heapfyUp()
+{
+    
+}
+
 /*
     Complexidade: O(log n)
 */
