@@ -2,6 +2,8 @@ using System;
 using System.Diagnostics;
 using System.Threading;
  
+//Complexidade - O(1)
+
 public class Example
 {
     public static void Main()
