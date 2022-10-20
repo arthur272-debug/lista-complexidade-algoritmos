@@ -14,7 +14,7 @@ function bubbleSort($array) {
 
     $size = count($array);
 
-    for ($i = 0; $i < $size - 1; $i++) {
+    for ($i = 0; $i < $size; $i++) {
         for ($j = 0; $j < $size - 1 - $i; $j++) {
 
             if ($array[$j] > $array[$j + 1]) {
@@ -29,7 +29,7 @@ function bubbleSort($array) {
     return $array;
 }
 
-$vector = [5, 2, 4, 10, 1, 3, 20];
+$vector = [5, 2, 4, 10, 1, 3, 20, -1, -20, -5];
 
 $totalTime = 0;
 $executions = 100000;
