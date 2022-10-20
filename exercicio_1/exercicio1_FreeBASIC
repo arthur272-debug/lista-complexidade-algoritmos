@@ -6,6 +6,7 @@ Sub quicksort(qs() As Long, l As Long, r As Long)
     Dim As Long i = l, j = r
     Dim As Long pivot = qs(l + size \ 2)
 
+'Comentário: while dentro de do: O(n)²'
     Do
         While qs(i) < pivot
             i += 1
@@ -30,6 +31,7 @@ End Sub
 Dim As Long i, array(-7 To 7)
 Dim As Long a = LBound(array), b = UBound(array)
 
+'For: O(n)'
 Randomize Timer
 For i = a To b : array(i) = i  : Next
 For i = a To b ' little shuffle
@@ -49,3 +51,5 @@ While Inkey <> "" : Wend
 Print : Print "hit any key to end program"
 Sleep
 End
+
+'Cálculo: O(n)² + O(n) + O(n) = O(n)² + 2O(n). Desconsidera-se os menores valores, logo, obtemos O(n)².'
