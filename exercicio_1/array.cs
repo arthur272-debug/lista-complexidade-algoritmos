@@ -1,4 +1,5 @@
-public class Program  // O(1)
+//Complexidade:  O(1) --> O(1)+O(1)+O(1)+O(1)+O(1)+O(1)+O(1)+O(1)+O(1)+O(1) = 10 O(1) ---> O(1)
+public class Program  
 {
 	public static void Main()
 	{

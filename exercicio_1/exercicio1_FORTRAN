@@ -1,0 +1,26 @@
+!O problema das 100 portas
+
+!Há 100 portas em uma linha reta que estão inicialmente fechadas.
+!Você passa 100 vezes pelas portas. Na primeira vez, você visita cada porta e a abre ou fecha (se a porta está fechada, você abre; se está aberta, você fecha).
+!Na segunda vez, você visita apenas as portas pares e as abre ou fecha.
+!Na terceira vez, você visita apenas as múltiplas de 3, e assim vai, até que você visite somente a 100ª porta.
+!Pergunta: qual será o estado das portas após a última passagem?
+
+program portas
+    implicit none
+    integer, allocatable :: porta(:)
+    character(6), parameter :: s(0:1) = ["fechada", "aberta "]
+    integer :: i, n
+
+    print "(A)", "Número de portas: "
+    read *, n
+    allocate (porta(n))
+    porta = 1
+    do i = 1, n
+        porta(i:n:i) = 1 - porta(i:n:i)
+        print "(A,G0,2A)", "porta ", i, " está ", s(porta(i))
+    end do
+end program
+
+!Complexidade: O(n)²
+!Cálculo: O(n) * O(n) (em porta(i:n:i) = 1 - porta(i:n:i)).
