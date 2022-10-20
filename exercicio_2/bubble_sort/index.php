@@ -1,5 +1,15 @@
 <?php
 
+/*
+    Complexidade: O(n^2)
+
+    Percebe-se que as duas estruras de repetiçao aninhadas seguem o mesmo comportamento
+    de uma progressao aritmética. Desse modo, para calcular o número de operaçoes realiadas no total,
+    baste utilizar a formula de Soma do Termos de uma PA: ((n + 1)*n)/2 = (n^2 + n)/2, que ao final
+    nos dará uma complexidade de O(n^2).
+    
+    Tempo médio de execuçao para 100000 testes realizados: 6.103515625E-8 milisegundos 
+*/
 function bubbleSort($array) {
 
     $size = count($array);
