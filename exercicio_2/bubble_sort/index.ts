@@ -1,6 +1,6 @@
-export function bubbleSort(array: number[]): number[] {
-    array = array.slice(); // creates a copy of the array
-
+public function bubbleSort(array: number[]): number[] {
+    //Complexidade O(N^2)
+    
     for(let i = 0; i < array.length; i++) {
         for(let j = 0; j < array.length - 1 - i; j++) {
 
