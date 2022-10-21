@@ -1,3 +1,6 @@
+//Complexidade: O(n²)
+// O(n)+ O(n) x O(n) + O(n) = 2 O(n) + O(n²) = O(n²)
+
 public static void main(String args[]){
 int[] vet = {8, 9, 3, 5, 1};
 int aux = 0;
