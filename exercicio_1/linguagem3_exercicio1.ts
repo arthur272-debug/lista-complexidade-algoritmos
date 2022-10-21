@@ -1,3 +1,7 @@
+//Complexidade: O(n log n)
+//O(n log n) = O(n) + O(n) + O(n log n) = 2(O)n + O(n log n) = O(n log n)
+//Explicação: O heapsort trabalha no lugar e o tempo de execução em pior cenário para ordenar n elementos é de O (n lg n). 
+
 class HeapSort
 {
    public sort(arr: number[])
