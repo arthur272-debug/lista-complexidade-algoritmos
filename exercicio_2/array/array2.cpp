@@ -2,6 +2,7 @@
 #include <chrono>
 
 # O(1) - complexidade
+# O(1)+O(1)+O(1)+O(1)+O(1)+O(1)+O(1)+O(1) = 8 O(1) = O(1)
 
 using namespace std;
 using namespace std::chrono;
