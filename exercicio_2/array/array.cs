@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Threading;
  
 //Complexidade - O(1)
+//O(1)+O(1)+O(1)+O(1)+O(1)+O(1)+O(1)+O(1)+O(1)+O(1)= 10 O(1) = O(1) 
 
 public class Example
 {
