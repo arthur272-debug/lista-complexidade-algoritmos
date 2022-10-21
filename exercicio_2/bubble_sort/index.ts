@@ -1,5 +1,6 @@
 public function bubbleSort(array: number[]): number[] {
-    //Complexidade O(N^2)
+    //Complexidade O(n²)
+    // O(n).O(n) = O(n²)
     
     for(let i = 0; i < array.length; i++) {
         for(let j = 0; j < array.length - 1 - i; j++) {
